@@ -103,3 +103,15 @@ sudo pacman -S krb5
 ```
 The Kerberos config file and the connection functions can be found in the my GitHub [repo](https://github.com/dungphan90/LinuxOS-Config). Instructions to use these config files can be found below. 
 
+## Versioning the `$HOME` directory with `git`
+I will not say much about the issue as this [article](https://www.electricmonk.nl/log/2015/06/22/keep-your-home-dir-in-git-with-a-detached-working-directory/) has provided an excellent instruction on how to achieve it. Just a small notice is that the fourth coding listing in the article
+```bash
+~/.dotfiles$ echo "alias dgit='git --git-dir ~/.dotfiles/.git --work-tree=\$HOME'" >> ~/.bashrc
+```
+contains a small typo. You just need to remove the `\` sign.
+```bash
+~/.dotfiles$ echo "alias dgit='git --git-dir ~/.dotfiles/.git --work-tree=$HOME'" >> ~/.bashrc
+```
+Another small issue is for those who use GitHub. They change the default branch from `master` to `main`, so pay attention when following the instructions in the article.
+
+

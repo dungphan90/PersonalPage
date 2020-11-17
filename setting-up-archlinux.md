@@ -1,3 +1,5 @@
+The config files used in this instruction is at [LinuxOS-Config](https://github.com/dungphan90/LinuxOS-Config).
+
 ## Installing the NVIDIA GPU driver, CUDA and CUDNN
 Right after we have a clean installation of the ArchLinux vanilla, we should go ahead with installtion of GPU driver installation. I have two graphics cards installed on my system:
 1. NVIDIA GeForce GTX 1070.

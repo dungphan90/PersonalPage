@@ -1,6 +1,3 @@
-# What to do after installing Arch
-This is my list of things to do after installing a new Arch system.
-
 ## Installing the NVIDIA GPU driver, CUDA and CUDNN
 Right after we have a clean installation of the ArchLinux vanilla, we should go ahead with installtion of GPU driver installation. I have two graphics cards installed on my system:
 1. NVIDIA GeForce GTX 1070.

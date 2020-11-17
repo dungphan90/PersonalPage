@@ -62,6 +62,12 @@ cd $HOME/.SpaceVim/bundle/vimproc.vim
 make
 ```
 
+To setup soft wrap, we will add a couple of lines to the `$HOME/.vim/vimrc`.
+```bash
+echo "set wrap linebreak nolist" >> $HOME/.vim/vimrc
+echo "set showbreak=+++" >> $HOME/.vim/vimrc
+```
+
 ## zsh, Oh-My-Zsh, and Powerline10k
 This is my complete set of SHELL environment and terminal decoration. This works perfectly with the pre-config `st-distrotube-git` package. You don't have to manually switch the default SHELL to `zsh`, during the installation of `Oh-My-Zsh` you will be asked if you want `zsh` as the default SHELL, just select `Yes` there.
 ```bash

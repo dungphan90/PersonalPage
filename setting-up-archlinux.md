@@ -114,4 +114,4 @@ contains a small typo. You just need to remove the `\` sign.
 ```
 Another small issue is for those who use GitHub. They change the default branch from `master` to `main`, so pay attention when following the instructions in the article.
 
-
+Lastly, for those of you who want to look at my config files, they are [here](https://github.com/dungphan90/LinuxOS-Config). I also keep a config repository for MacOS [here](https://github.com/dungphan90/MacOS-SysConf).

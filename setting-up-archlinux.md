@@ -11,9 +11,7 @@ sudo pacman -S nvidia
 sudo pacman -S xf86-video-amdgpu vulkan-radeon libva-mesa-driver mesa-vdpau
 ```
 
-After the installation of `xorg` (see below), additional steps are needed to exclude `xorg` from running on the NVIDIA card. I specifically need this because I just want to run the graphic server on the AMD card and free the NVIDIA card from any graphic rendering task. The NVIDIA card will be used only for parallel computing tasks.
-
-See [here](https://gist.github.com/wangruohui/bc7b9f424e3d5deb0c0b8bba990b1bc5) for more details. Below is my `xorg.conf` file.
+After the installation of `xorg` (see below), additional steps are needed to exclude `xorg` from running on the NVIDIA card. I specifically need this because I just want to run the graphic server on the AMD card and free the NVIDIA card from any graphic rendering task. The NVIDIA card will be used only for parallel computing tasks. See [here](https://gist.github.com/wangruohui/bc7b9f424e3d5deb0c0b8bba990b1bc5) for more details. Below is my `xorg.conf` file.
 ```conf
 Section "ServerLayout"
 	Identifier 	"Layout0"
@@ -32,7 +30,7 @@ Section "Device"
 	BusID		"PCI:04:0:0"
 EndSection
 ```
-The `BusID` can be found be the `lspci | VGA` command. 
+The `BusID` can be found be the `lspci | grep VGA` command. 
 
 ### CUDA and CUDNN
 CUDA and CUDNN can be installed by the `yay` AUR helper.

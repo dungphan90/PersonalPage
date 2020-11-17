@@ -115,3 +115,39 @@ contains a small typo. You just need to remove the `\` sign.
 Another small issue is for those who use GitHub. They change the default branch from `master` to `main`, so pay attention when following the instructions in the article.
 
 Lastly, for those of you who want to look at my config files, they are [here](https://github.com/dungphan90/LinuxOS-Config). I also keep a config repository for MacOS [here](https://github.com/dungphan90/MacOS-SysConf).
+
+## Setup `pyenv`
+A simple python guideline is that you never touch the `system` python. Install your own base versions with `pyenv`. For each base version, build your set of package dependencies with `venv`. In ArchLinux, you can install `pyenv` with `pacman`.
+```bash
+sudo pacman -S pyenv
+```
+
+To use `pyenv`, you need to have a few setup line in the `.bashrc` or `.zshrc` profiles. I keep mine in my GitHub repo. For those of you that don't want my whole `.zenv.sh`, the script is below.
+```bash
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
+```
+
+More details can be found [here](https://realpython.com/intro-to-pyenv/).
+
+### Setup base and virtual python environment
+Setup the base environment with `pyenv`. Start a new SHELL (`exec $SHELL` or restart the terminal) and run the following lines.
+```bash
+# Check which versions are available
+# If you run this for the first time, the deault python will be the system one.
+pyenv versions 
+
+# Install a base version then setting it as defautl
+pyenv install 3.8.3
+pyenv global 3.8.3
+```
+You can also setup a temporary python environment for a work session with `pyenv local`.
+
+Setup the virtual environment with your choice of a set of packages. We do this with `venv` package.
+```bash
+python -m venv <venv_name>
+source /path/to/venv_name/bin/activate
+```

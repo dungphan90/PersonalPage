@@ -7,7 +7,7 @@ The installation of the drivers for these two cards is as simple as
 ```bash
 # For NVIDIA
 sudo pacman -S nvidia
- # For AMD (https://wiki.archlinux.org/index.php/AMDGPU)
+# For AMD (https://wiki.archlinux.org/index.php/AMDGPU)
 sudo pacman -S xf86-video-amdgpu vulkan-radeon libva-mesa-driver mesa-vdpau
 ```
 

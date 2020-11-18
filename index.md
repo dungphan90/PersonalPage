@@ -1,3 +1,5 @@
+![ProfileImage](profile.jpg)
+
 ## About me
 
 Welcome to my personal webpage!
@@ -10,13 +12,15 @@ I have broad interests in physics, with a particular focus on the neutron-antine
 
 Besides physics, I enjoy reading about biology, especially evolution and genetics. In my free time, I enjoy playing video games. Some of myfavorite games are the Ori series, DOTA, and Zelda BOTW.
 
+### Some links
+
 [CV](AcademicCV.pdf)
 
-[ORCID 0000-0002-0649-8167](https://orcid.org/0000-0002-0649-8167)
+[ORCID](https://orcid.org/0000-0002-0649-8167)
 
-[Collaboration Publications](https://inspirehep.net/authors/1597796)
+[Publications](https://inspirehep.net/authors/1597796)
 
-[Ph.D. Thesis: A Search for Neutron-Antineutron Oscillation in the NOvA Experiment](https://lss.fnal.gov/archive/thesis/2000/fermilab-thesis-2020-13.pdf)
+[Dissertation](https://lss.fnal.gov/archive/thesis/2000/fermilab-thesis-2020-13.pdf)
 
 ## Blog posts
 

@@ -8,7 +8,7 @@ I have broad interests in physics, with a particular focus on the neutron-antine
 
 <!--Another research direction I'm working on is the search for sterile neutrinos in the MINOS/MINOS+ experiment. Thanks to the results of many experiments over the last 40 years, we established a fairly good understanding of the phenomenon. We learnt that neutrinos can morph between three different **flavors** as they travel. Thanks to this discovery, we know that neutrinos have masses, albeit tiny ones. We built up a model to explain all of these observations based on the mixing of neutrino flavor eigenstates and mass eigenstates. The core of this model is the mixing matrix called the [PMNS matrix](https://en.wikipedia.org/wiki/Pontecorvo%E2%80%93Maki%E2%80%93Nakagawa%E2%80%93Sakata_matrix) (named after Bruno Pontecorvo, Ziro Maki, Masami Nakagawa, and Shoichi Sakata). Precision measurements of the parameters that characterize the PMNS matrix has been always the main themee of neutrino oscillations experiments over the years. MINOS/MINOS+ is not an exception. In fact, this experiment had, for a number of years, provided the most precise measurements of $\theta_{23}$ and $\Delta m_{32}^2$. MINOS/MINOS+ did this by measuring the...-->
 
-Besides physics, I enjoy reading about biology, especially evolution and genetics. In my free time, I enjoy playing video games. Some of myfavorite games are the Ori series, DOTA, and Zelda BOTW.
+Besides physics, I enjoy reading about biology, especially evolution and genetics. In my free time, I enjoy playing video games. Some of my favorite games are the Ori series, DOTA, and Zelda BOTW.
 
 #### Some links
 

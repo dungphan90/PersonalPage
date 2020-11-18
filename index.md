@@ -10,7 +10,7 @@ I have broad interests in physics, with a particular focus on the neutron-antine
 
 Besides physics, I enjoy reading about biology, especially evolution and genetics. In my free time, I enjoy playing video games. Some of myfavorite games are the Ori series, DOTA, and Zelda BOTW.
 
-### Some links
+#### Some links
 
 [CV](AcademicCV.pdf)
 

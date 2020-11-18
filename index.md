@@ -1,5 +1,3 @@
-![ProfileImage](profile.jpg)
-
 ## About me
 
 Welcome to my personal webpage!

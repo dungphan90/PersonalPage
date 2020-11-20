@@ -29,3 +29,5 @@ Githubs: [dungducphan](https://github.com/dungducphan), [brianutaustin](https://
 [11-11-2020] [Setting up a new ArchLinux System](setting-up-archlinux.md)
 
 [11-19-2020] [Building Tensorflow from Source with CUDA support](tensorflow-with-cuda.md)
+
+[11-19-2020] [First Tensorflow program: MNIST dataset](tensorflow-1-intro-mnist-dataset.md)

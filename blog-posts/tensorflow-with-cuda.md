@@ -2,7 +2,6 @@
 1. Install NVIDIA driver, `CUDA`, and `CUDNN` as described in [here](setting-up-archlinux.md).
 2. Setup base and virtual python environment as in [here](setting-up-archlinux.md). You can look at my sample setup functions below. These two function can be put in `~/.zshrc` or `~/.zprofile` (or `~/.bashrc` and `~/.profile` if you are using `bash`).
 ```bash
-# Using PyEnv
 function setup_pyenv() {
   export PYENV_ROOT="$HOME/.pyenv"
   export PATH="$PYENV_ROOT/bin:$PATH"

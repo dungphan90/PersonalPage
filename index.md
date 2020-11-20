@@ -12,7 +12,7 @@ Besides physics, I enjoy reading about biology, especially evolution and genetic
 
 #### Some links
 
-[CV](AcademicCV.pdf)
+[CV](assets/AcademicCV.pdf)
 
 [Github](https://github.com/dungphan90)
 
@@ -24,10 +24,10 @@ Besides physics, I enjoy reading about biology, especially evolution and genetic
 
 ## Blog posts
 
-[11-10-2010] [Accelerator based Neutrino Physics Program](accelerator-neutrinos.md)
+[11-10-2010] [Accelerator based Neutrino Physics Program](blog-posts/accelerator-neutrinos.md)
 
-[11-11-2020] [Setting up a new ArchLinux System](setting-up-archlinux.md)
+[11-11-2020] [Setting up a new ArchLinux System](blog-posts/setting-up-archlinux.md)
 
-[11-19-2020] [Building Tensorflow from Source with CUDA support](tensorflow-with-cuda.md)
+[11-19-2020] [Building Tensorflow from Source with CUDA support](blog-posts/tensorflow-with-cuda.md)
 
-[11-19-2020] [First Tensorflow program: MNIST dataset](tensorflow-1-intro-mnist-dataset.md)
+[11-19-2020] [First Tensorflow program: MNIST dataset](blog-posts/tensorflow-1-intro-mnist-dataset.md)

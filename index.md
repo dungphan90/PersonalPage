@@ -15,7 +15,6 @@ Besides physics, I enjoy reading about biology, especially evolution and genetic
 [CV](AcademicCV.pdf)
 
 [Github](https://github.com/dungphan90)
-I have a couple of old accounts [here](https://github.com/dungducphan) and [here](https://github.com/brianutaustin) as well.
 
 [ORCID](https://orcid.org/0000-0002-0649-8167)
 

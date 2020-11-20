@@ -24,7 +24,7 @@ I hope I convinced you that neutrino research is necessary and cool. So how are 
 ### Requirements for Neutrino Beams
  An intense source of neutrinos with well-defined momenta and energy is a must for the success of a neutrino oscillation research program. So, even though they are exceedingly abundant, no natural sources of neutrinos would make the cut for this type of study. 
 
- We have to make neutrino beams from particle accelerators. To this date, only a few laboratories can provide particle physicists with a neutrino beam. They are Fermilab in the US, KEK in Japan and CERN in Europe. The neutrino beamlines of all three laboratories exploits the same working principle: the muon neutrino dominated beam are created from the decay of $$\pi$$ and $$K$$ mesons.
+ We have to make neutrino beams from particle accelerators. To this date, only a few laboratories can provide particle physicists with a neutrino beam. They are Fermilab in the US, KEK in Japan and CERN in Europe. The neutrino beamlines of all three laboratories exploits the same working principle: the muon neutrino dominated beam are created from the decay of <img src="https://render.githubusercontent.com/render/math?math=\pi"> and $$K$$ mesons.
 
 
  

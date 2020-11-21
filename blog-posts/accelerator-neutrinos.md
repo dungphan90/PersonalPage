@@ -18,6 +18,8 @@ I hope I convinced you that neutrino research is necessary and cool. So how are 
 
 <img src="https://render.githubusercontent.com/render/math?math=\pi^\pm\rightarrow\nu_\mu %2B \mu^\pm">
 
+The common design for all neutrino beam 
 
- 
- In an ideal world, we would like to have a mono-energetic, pencil neutrino beam, meaning all the neutrinos in the beam have the same energy and same direction.
+
+
+In an ideal world, we would like to have a mono-energetic, pencil neutrino beam, meaning all the neutrinos in the beam have the same energy and same direction.

@@ -7,9 +7,52 @@
 
 ## When `tmux` becomes useful?
 
-You would want to use `tmux` when:
-  - Your work involve connecting to a remote server via `ssh`. Without `tmux`, if for whatever reason (disconnection, your local terminal crash, ...) the `ssh` session is killed, any processes that is running on the server will be terminated. With `tmux`, the terminal session will stay even if the `ssh` connection is no longer running. This is actually one of many reasons I started to look into `tmux`. 
-  - There is some overhead in setting up your work environment. Like in my case, I usually need to log into a specific login machine, calling a few scripts to setup a development trimmed to my needs, then `cd`ing to a specific code base folder, editing some files, having a separate terminal for building and running, etc. There are cases when I need to work with multiple files and I couldn't remember to open them all. Open a new terminal and locate the file that I need midwork is really distracting for me. `tmux` is the perfect answer for this issue. All you need is creating a named `tmux` session with all your windows, panes, and setup up and running for once. After a working session, you will simply detach the session. All your processes that were running in the `tmux` session will still be there, waiting you to re-attach to continue the work. I have a few sessions that are few weeks old, always ready for me with all the opening files and `vim` cursors placed right where my past edition is being paused. Saving even the smallest overhead will have a strong effect on your productivity on the long term.
-  - As mentioned briefly in the previous paragraph, in coding work, I need multiple terminals for code editing, compiling, running, version controlling, etc. Having many terminal emulator windows opening, to me, is not ideal. I tried using a couple of tiling window managers but none actually fit my needs and I feel like not all screen real estate is well utilized. `tmux`, again, is the perfect solution to me due to its simple usages of panes and windows. The pane seperator in `tmux` is a single-pixel line and all the screen is utilized to its most potential. The key strokes to move between panes/windows are not as great as those of `emacs` but, at the same time, not terrible. 
+### Working by `ssh` to remote server
 
-## 
+Let say your work involve connecting to a remote server via `ssh`. Without `tmux`, if for whatever reason (disconnection, your local terminal crash, ...) the `ssh` session is killed, any processes that is running on the server will be terminated. If you once experienced this issue, you knew how annoying and distracting it is to your work.
+
+With `tmux`, the remote terminal session will stay even if the `ssh` connection is no longer running. This is actually one of many reasons I started to look into `tmux`. 
+
+### Reducing Setting-up Overhead
+There is always some overhead in starting up your work environment. In my case, I usually need to log into a specific machine on a remote server, calling a few scripts to setup a development that has been trimmed to my needs, then `cd`ing to a specific code base folder, editing some files, having a few separate terminals with a tiny different environment for building and running the code, etc. So, setting up a work environment for me would take a minute or so everytime. Worst, there are cases when I need to work with multiple files and I couldn't remember to open them all. Open a new terminal and locate the file that I need mid working session is really distracting for me.
+
+`tmux` is the perfect answer for this issue. All you need is creating a named `tmux` session with all your windows, panes, and setup up and running for once. After a working session, you will simply detach the session. All your processes that were running in the `tmux` session will still be there, waiting you to re-attach to continue the work. I usually have a few sessions that are few weeks old, always ready for me with all the opening files and `vim` cursors placed right where my past edition is being paused. Saving even the smallest overhead will have a strong effect on your productivity on the long term.
+
+`tmux` sessions allow me to quickly switching between workflows and/or projects. For example, with a few key strokes, I can really move from C++ coding to a front-end web development work. There are no overhead of starting or switching between workflows at all.
+
+### Screen Real Estate Usage
+As mentioned briefly in the previous paragraph, in a coding session, I need multiple terminals for code viewing/editing, compiling, running, version controlling, etc. Having many terminal emulator windows opening, to me, is not ideal though. I also tried using a couple of tiling window managers but none actually fit my needs and I feel like not all screen real estate is well utilized. 
+
+`tmux`, again, is the perfect solution to me due to its simple usages of panes and windows. The pane seperator in `tmux` is a single-pixel line and all the screen is utilized to its most potential. The key strokes to move between panes/windows are not as great as those of `emacs` but, at the same time, not terrible. 
+
+## Using `tmux`
+
+### Installation
+Installing `tmux` is simply as
+```bash
+sudo apt-get install tmux #on Ubuntu or
+sudo pacman -S tmux #on ArchLinux or
+bew install tmux #on MacOs
+```
+### Session
+`tmux` session can be attached or detached at any point of its lifetime. All the processes running in a session will keep running no matter a terminal emulator is attached to the session or not. So our basic usage of a session will be: creating a named session, working on a project in that session, detaching from the session if we want a break, re-attaching if we want to continue working and only killing the session when the work is absolutely done.
+
+My productivity trick is having one session for one specific task (like implementing a new feature or debugging an issue). I will keep the session alive as long as I need (usually few weeks old). And I give each session a easy-to-remember name so I can quickly re-attach to it.
+
+Commands to control a session are listed below.
+1. To create a session
+```bash
+tmux new # Untittle session
+tmux new session ## Untittle session
+tmux new -s <SessionName> ## Create a new session name "SessionName"
+```
+If you working with a remote server via `ssh`, the session should be initiated on the remote machine, not your local machine. So you will need to `ssh` on a normal, non-`tmux` session from your computer to the remote machine. Once on the remote, create a `tmux` session there. Make sure to have `tmux` client on the remote machine. If that's not the case, contact the server admin to install it for you.
+
+
+2. To kill a session. If you `exit` from all the `$SHELL` in a `tmux` session, the session will be killed. To immediately kill one or multiple sessions, you can also use the command
+```bash
+tmux kill-session
+```
+
+
+## Tips and Tricks

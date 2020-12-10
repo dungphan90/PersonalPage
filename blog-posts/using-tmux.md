@@ -106,6 +106,6 @@ alias tmd="tmux detach"
 
 3. I keep a window dedicated for a `vim` session that works as a journal to remind me of progress of the project in the current session, or things that I left off from the last working session. 
 
-4. A little demo
+4. [A little demo](https://www.youtube.com/watch?v=jdp55ixy7O4)
 
 

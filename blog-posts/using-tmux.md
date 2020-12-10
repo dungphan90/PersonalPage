@@ -48,11 +48,64 @@ tmux new -s <SessionName> ## Create a new session name "SessionName"
 ```
 If you working with a remote server via `ssh`, the session should be initiated on the remote machine, not your local machine. So you will need to `ssh` on a normal, non-`tmux` session from your computer to the remote machine. Once on the remote, create a `tmux` session there. Make sure to have `tmux` client on the remote machine. If that's not the case, contact the server admin to install it for you.
 
-
-2. To kill a session. If you `exit` from all the `$SHELL` in a `tmux` session, the session will be killed. To immediately kill one or multiple sessions, you can also use the command
+2. To kill a session. If you `exit` from all the `$SHELL` in a `tmux` session, the session will be killed. To immediately kill one or multiple sessions, you can also use the following commands.
 ```bash
-tmux kill-session
+tmux kill-session -t <SessionName> ## Kill a specific session
+tmux kill-session -a ## Kill all sessions except the current one
+tmux kill-session -a -t <SessionName> ## Kill all sessions except a specific one
 ```
 
+3. Detach and re-attaching a session. When we detach from a session, that session is still running in the background. So detaching is just like you pausing the work you are doing. You can always come back to where you left off by re-attaching.
+
+```bash
+tmux detach
+tmux attach ## Attach to the session, if there is only one session online
+tmux attach-session -t <SessionName> ## Specify the session you want to attach to
+```
+
+4. Moving between sessions. Eventhough this is possible, as I mention earlier, I would like to organize the working session so that one terminal client tab or window is handling one and only one project. This means I don't need to move between sessions. But if you do, the key strokes are `Ctrl+b (` to move to previous session and `Ctrl+b )` to move to next session.
+
+### Key Strokes in `tmux`
+Key strokes in `tmux` always starts with `Ctrl+b` following by a single character. Below is the most frequently used key strokes to control panes and windows. 
+
+1. Panes
+```
+Ctrl+b %                  --- Split pane vertically
+Ctrl+b "                  --- Split pane horizontally
+Ctrl+b <arrow-keys>       --- Move to a different pane
+Ctrl+b Ctrl+<arrow-keys>  --- Resize a pane
+Ctrl+b x                  --- Close a pane (you can simply exit from the session in the pane)
+```
+
+2. Windows
+```
+Ctrl+b c                  --- Creating a new window
+Ctrl+b p                  --- Go to previous window
+Ctrl+b n                  --- Go to next window
+```
+
+3. Copy mode
+In the normal `tmux` mode, you cannot use the mouse scroll or arrow keys to move a text buffer. You need to enter copy mode to do that.
+```
+Ctrl+b [                  --- Enter the copy mode
+Ctrl+b <arrow-keys>       --- Navigate in copy mode
+q                         --- Quit copy mode
+```
 
 ## Tips and Tricks
+1. These are few tips to assist you in using `tmux`. First is using aliases. I keep these aliases in my `.zprofile`.
+```bash
+alias tms="tmux new -s"
+alias tmk="tmux kill-session -t"
+alias tma="tmux attach-session -t"
+alias tml="tmux ls"
+alias tmd="tmux detach"
+```
+
+2. The resizing can be done by holding all three keys `Ctrl`, `b` and a `<arrow-key>`.
+
+3. I keep a window dedicated for a `vim` session that works as a journal to remind me of progress of the project in the current session, or things that I left off from the last working session. 
+
+4. A little demo
+
+

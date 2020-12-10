@@ -31,3 +31,5 @@ Besides physics, I enjoy reading about biology, especially evolution and genetic
 [11-19-2020] [Building Tensorflow from Source with CUDA support](blog-posts/tensorflow-with-cuda.md)
 
 [11-19-2020] [First Tensorflow program: MNIST dataset](blog-posts/tensorflow-1-intro-mnist-dataset.md)
+
+[12-10-2020] [Using `tmux` for productivity](blog-posts/using-tmux.md)

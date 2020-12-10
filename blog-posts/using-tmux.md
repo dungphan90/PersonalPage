@@ -1,0 +1,15 @@
+## What is `tmux`?
+
+`tmux` is short for **t**erminal **mu**ltiple**x**er. It allows user to have multiple terminal sessions to be simulteneously accessible in a single window. So you might think that it's basically just like having multiple tab on a terminal emulator like `iterm2` or `gnome-terminal`. What is the benefit?
+
+`tmux` is not like having multiple tabs on a terminal emulator. When you kill a terminal emulator, the session dies with it. `tmux`, on the other hand, allows the session, along with running processes, to be detached from the console. I will give some examples of this below, but before going into details, I will go quickly over what are the benefits of using `tmux` and in which case I would reccommend you to use `tmux`.
+
+
+## When `tmux` becomes useful?
+
+You would want to use `tmux` when:
+  - Your work involve connecting to a remote server via `ssh`. Without `tmux`, if for whatever reason (disconnection, your local terminal crash, ...) the `ssh` session is killed, any processes that is running on the server will be terminated. With `tmux`, the terminal session will stay even if the `ssh` connection is no longer running. This is actually one of many reasons I started to look into `tmux`. 
+  - There is some overhead in setting up your work environment. Like in my case, I usually need to log into a specific login machine, calling a few scripts to setup a development trimmed to my needs, then `cd`ing to a specific code base folder, editing some files, having a separate terminal for building and running, etc. There are cases when I need to work with multiple files and I couldn't remember to open them all. Open a new terminal and locate the file that I need midwork is really distracting for me. `tmux` is the perfect answer for this issue. All you need is creating a named `tmux` session with all your windows, panes, and setup up and running for once. After a working session, you will simply detach the session. All your processes that were running in the `tmux` session will still be there, waiting you to re-attach to continue the work. I have a few sessions that are few weeks old, always ready for me with all the opening files and `vim` cursors placed right where my past edition is being paused. Saving even the smallest overhead will have a strong effect on your productivity on the long term.
+  - As mentioned briefly in the previous paragraph, in coding work, I need multiple terminals for code editing, compiling, running, version controlling, etc. Having many terminal emulator windows opening, to me, is not ideal. I tried using a couple of tiling window managers but none actually fit my needs and I feel like not all screen real estate is well utilized. `tmux`, again, is the perfect solution to me due to its simple usages of panes and windows. The pane seperator in `tmux` is a single-pixel line and all the screen is utilized to its most potential. The key strokes to move between panes/windows are not as great as those of `emacs` but, at the same time, not terrible. 
+
+## 

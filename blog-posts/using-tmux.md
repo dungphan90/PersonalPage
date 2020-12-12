@@ -108,4 +108,14 @@ alias tmd="tmux detach"
 
 4. [A little demo](https://www.youtube.com/watch?v=jdp55ixy7O4)
 
+5. My `~/.tmux.conf`
 
+```bash
+# Using color in tmux
+set -g default-terminal "screen-256color"
+
+# New panes and windows open in current directory
+bind c new-window -c "#{pane_current_path}"
+bind '"' split-window -c "#{pane_current_path}"
+bind % split-window -h -c "#{pane_current_path}"
+```

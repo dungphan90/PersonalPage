@@ -1,3 +1,6 @@
+This is taken from the book "Deep Learning with Python" by François Chollet. This book is a good starter point for learning Machine Learning: https://www.manning.com/books/deep-learning-with-python.
+
+
 Download MNIST dataset
 
 

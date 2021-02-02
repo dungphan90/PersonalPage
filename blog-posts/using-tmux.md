@@ -87,7 +87,6 @@ Ctrl+b n                  --- Go to next window
 3. Copy mode
 In the normal `tmux` mode, you cannot use the mouse scroll or arrow keys to move a text buffer. You need to enter copy mode to do that.
 ```
-<arrow-keys>              --- Navigate in copy mode
 h-j-k-l                   --- Navigate in copy mode
 Ctrl+Spacebar             --- Start selection
 Esc                       --- End selection

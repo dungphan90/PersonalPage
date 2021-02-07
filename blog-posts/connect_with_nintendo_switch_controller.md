@@ -101,3 +101,9 @@ The `PYTHONSITEPATH` can be found in the list of `sys.path` in
 python -m site
 ```
 
+Save the battery of the controller by disconnect its bluetooth.
+```bash
+bluetoothctl
+disconnect 
+```
+

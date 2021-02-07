@@ -35,7 +35,7 @@ sudo pacman -S dkms linux-lts-headers
 ```
 I used the `linux-lts` so I installed the `linux-lts-headers`. If you are not using the LTS version, install the non-LTS kernel headers.
 
-Let's start with installing the kernel module. The installation instruction is right on the module's (github)[https://github.com/nicman23/dkms-hid-nintendo]. You might need to change it a bit.
+Let's start with installing the kernel module. The installation instruction is right on the module's [github](https://github.com/nicman23/dkms-hid-nintendo). You might need to change it a bit.
 ```bash
 git clone https://github.com/nicman23/dkms-hid-nintendo
 cd dkms-hid-nintendo
@@ -47,7 +47,7 @@ sudo dkms build nintendo -v 3.1
 sudo dkms install nintendo -v 3.1
 ```
 
-For `joycond`, follow the instruction (here)[https://github.com/DanielOgorchock/joycond]. We need `libevdev`. I have installed `libinput` which depends on `libevdev`. If these packages are not on your system yet, install them. Otherwise, go ahead with `joycond`:
+For `joycond`, follow the instruction [here](https://github.com/DanielOgorchock/joycond). We need `libevdev`. I have installed `libinput` which depends on `libevdev`. If these packages are not on your system yet, install them. Otherwise, go ahead with `joycond`:
 ```bash
 sudo pacman -S libevdev
 git clone git@github.com:DanielOgorchock/joycond.git
@@ -57,11 +57,11 @@ sudo systemctl enable --now joycond
 sudo systemctl start --now joycond
 ```
 
-## Quick check using (Gamepad\_Tester)[https://gamepad-tester.com/]
-Just go to (`https://gamepad-tester.com/`)[https://gamepad-tester.com/] while the controller is connected. Trying out the buttons on the controller and see if the website can register the controller's signals.
+## Quick check using [Gamepad\_Tester](https://gamepad-tester.com/)
+Just go to [`https://gamepad-tester.com/`](https://gamepad-tester.com/) while the controller is connected. Trying out the buttons on the controller and see if the website can register the controller's signals.
 
 ## Test communication with `evdev`
-I followed the instructions in (here_)[https://core-electronics.com.au/tutorials/using-usb-and-bluetooth-controllers-with-python.html]. You should read the article carefully, it's full with useful information. I listed the commands I ran here.
+I followed the instructions in [here](https://core-electronics.com.au/tutorials/using-usb-and-bluetooth-controllers-with-python.html). You should read the article carefully, it's full with useful information. I listed the commands I ran here.
 
 Verify controller connection. The devices and the Linux system communicate by reading/writing the device files in `/dev`. By `cat`ing the correct file, which is of the formal `/dev/input/eventXXX`, we can confirm that we receive the game controller's signals. If you only connect the controller to the computer recently, then the correct device file will be the one with maximum `XXX`. Mine is `30`, yours will be different.
 ```bash

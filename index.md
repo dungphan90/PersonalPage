@@ -33,3 +33,5 @@ Besides physics, I enjoy reading about biology, especially evolution and genetic
 [11-19-2020] [First Tensorflow program: MNIST dataset](blog-posts/tensorflow-1-intro-mnist-dataset.md)
 
 [12-10-2020] [Using `tmux` for productivity](blog-posts/using-tmux.md)
+
+[02-07-2021] [Connecting Nintendo Switch Pro Controller to Linux](blog-posts/connect_with_nintendo_switch_controller.md)

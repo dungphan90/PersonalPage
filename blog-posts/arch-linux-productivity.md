@@ -1,7 +1,9 @@
 I'm very happy to come back after a long year. I hope to keep this blog going for longer this time. For this comeback writing, I would like to introduce a few productivity softwares that served me very well recently. 
 
 ## SpaceVIM
+SpaceVIM deserves its own dedicated note. Here I will try to summarize the most basic usage and most useful tips and tricks in using SpaceVIM. If you are interested in learning advanced features of SpaceVIM, you can check out their documentation at [SpaceVIM documentation](https://spacevim.org/documentation/#core-pillars).
 
+The four cornerstones in the design of SpaceVIM are `mnemonic`, `discoverable`, `consistent`,  and `crowd-configured`. 
 
 ## VIMium 
 VIMium is an open-source `google-chrome` extension that allows you to navigate the web browser with Vim key bindings. It turns `google-chrome` into a keyboard-driven software. For a long time, web browser and PDF viewer are the only two reasons I keep a mouse on my desk. It's no longer the case as I found VIMium and Zathura (a VIM-like document viewer). Now, there is a small number of websites that VIMium does not (fully) support. This issue can be easily overcome if you know the *normal* chrome key bindings (like `Alt + TAB_NUMBER`).
